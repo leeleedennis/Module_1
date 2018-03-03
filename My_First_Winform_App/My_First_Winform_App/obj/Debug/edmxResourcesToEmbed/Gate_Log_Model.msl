@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Gate_LogModelStoreContainer" CdmEntityContainer="Gate_LogEntities">
+    <EntitySetMapping Name="Activity_Log">
+      <EntityTypeMapping TypeName="Gate_LogModel.Activity_Log">
+        <MappingFragment StoreEntitySet="Activity_Log">
+          <ScalarProperty Name="Entry_Log_ID" ColumnName="Entry_Log_ID" />
+          <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+          <ScalarProperty Name="Middle_Initial" ColumnName="Middle_Initial" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+          <ScalarProperty Name="Licence_Plate_Number" ColumnName="Licence_Plate_Number" />
+          <ScalarProperty Name="Time_In" ColumnName="Time_In" />
+          <ScalarProperty Name="Time_Out" ColumnName="Time_Out" />
+          <ScalarProperty Name="Laptop" ColumnName="Laptop" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="Gate_LogModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Date_Created" ColumnName="Date_Created" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
